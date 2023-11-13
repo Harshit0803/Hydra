@@ -47,7 +47,7 @@
 #include <kimera_pgmo/MeshFrontend.h>
 #include <pose_graph_tools/PoseGraph.h>
 #include <spark_dsg/scene_graph_logger.h>
-
+#include <thread>
 #include <memory>
 #include <mutex>
 
