@@ -41,7 +41,7 @@
 #include <tf2_eigen/tf2_eigen.h>
 
 #include <glog/logging.h>
-
+#include <thread>
 #include <fstream>
 
 namespace hydra {
