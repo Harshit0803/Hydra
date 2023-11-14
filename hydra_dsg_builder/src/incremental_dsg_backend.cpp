@@ -148,12 +148,12 @@ bool DsgBackend::updatePrivateDsg() {
   if (have_frontend_updates) {
     {  // start joint critical section
       std::unique_lock<std::mutex> shared_graph_lock(shared_dsg_->mutex);
-      private_dsg_->graph->mergeGraph(*shared_dsg_->graph,
-                                      merged_nodes_,
-                                      false,
-                                      true,
-                                      &config_.merge_update_map,
-                                      config_.merge_update_dynamic);
+      // private_dsg_->graph->mergeGraph(*shared_dsg_->graph,
+      //                                 merged_nodes_,
+      //                                 false,
+      //                                 true,
+      //                                 &config_.merge_update_map,
+      //                                 config_.merge_update_dynamic);
       *private_dsg_->latest_places = *shared_dsg_->latest_places;
 
       if (shared_dsg_->graph->hasLayer(DsgLayers::PLACES)) {
