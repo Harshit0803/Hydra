@@ -488,6 +488,7 @@ bool DsgBackend::addInternalLCDToDeformationGraph() {
 }
 
 void DsgBackend::updateDsgMesh(bool force_mesh_update) {
+  // added dummy vals for num_interp_pts_, interp_horizon_; see Kimera-PGMO DeformationGraph.h
   double num_interp_pts_ = 4;
   double interp_horizon_ = 10.0;
   // avoid scope problems by using a smart pointer
