@@ -242,7 +242,7 @@ void DsgFrontend::runMeshFrontend() {
           "frontend/mesh_compression", last_mesh_timestamp_, true, 1, false);
 
       mesh_frontend_ros_queue_->callAvailable(ros::WallDuration(0.0));
-      mesh_frontend_.voxbloxCallback(mesh_msg);
+      mesh_frontend_.voxbloxCallback(*mesh_msg);
     }  // end timing scope
 
     mesh_frontend_.clearArchivedMeshFull(msg->archived_blocks);
