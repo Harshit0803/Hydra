@@ -103,7 +103,7 @@ DsgBackend::DsgBackend(const ros::NodeHandle nh,
   });
 
   deformation_graph_->setForceRecalculate(!config_.pgmo.gnc_fix_prev_inliers);
-  deformation_graph_->storeOnlyNoOptimization();
+  // deformation_graph_->storeOnlyNoOptimization();
 
   if (config_.should_log) {
     backend_graph_logger_.setOutputPath(config_.log_path + "/backend");
