@@ -34,7 +34,7 @@
  * -------------------------------------------------------------------------- */
 #include "hydra_dsg_builder/incremental_dsg_backend.h"
 #include "hydra_dsg_builder/minimum_spanning_tree.h"
-#include "hydra/backend/backend_config.h"
+// #include "hydra/backend/backend_config.h"
 #include <hydra_utils/timing_utilities.h>
 #include <voxblox/core/block_hash.h>
 
