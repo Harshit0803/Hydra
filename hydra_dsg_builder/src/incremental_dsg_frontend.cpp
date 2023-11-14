@@ -57,7 +57,9 @@ DsgFrontend::DsgFrontend(const ros::NodeHandle& nh, const SharedDsgInfo::Ptr& ds
   config_ = load_config<DsgFrontendConfig>(nh_);
 
   ros::NodeHandle pgmo_nh(nh_, "pgmo");
-  CHECK(mesh_frontend_.initialize(pgmo_nh, false));
+  // CHECK(mesh_frontend_.initialize(pgmo_nh, false));
+  
+  CHECK(mesh_frontend_.initialize(pgmo_nh))
   last_mesh_timestamp_ = 0;
   last_places_timestamp_ = 0;
 
