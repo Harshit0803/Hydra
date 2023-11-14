@@ -41,7 +41,7 @@
 #include <hydra_utils/dsg_streaming_interface.h>
 #include <kimera_pgmo/KimeraPgmoInterface.h>
 #include <spark_dsg/scene_graph_logger.h>
-
+#include "hydra/backend/backend_config.h"
 #include <ros/callback_queue.h>
 #include <ros/ros.h>
 
