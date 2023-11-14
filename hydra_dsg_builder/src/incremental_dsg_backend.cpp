@@ -475,14 +475,14 @@ bool DsgBackend::addInternalLCDToDeformationGraph() {
   }  // end critical section
 
   bool added_new_loop_closure = false;
-  for (const auto& lc : to_process) {
-    deformation_graph_->addNewBetween(
-        lc.src, lc.dest, lc.src_T_dest, gtsam::Pose3(), lc_variance_);
-    added_new_loop_closure = true;
-    num_loop_closures_++;
+  // for (const auto& lc : to_process) {
+  //   deformation_graph_->addNewBetween(
+  //       lc.src, lc.dest, lc.src_T_dest, gtsam::Pose3(), lc_variance_);
+  //   added_new_loop_closure = true;
+  //   num_loop_closures_++;
 
-    have_loopclosures_ = true;
-  }
+  //   have_loopclosures_ = true;
+  // }
 
   return added_new_loop_closure;
 }
