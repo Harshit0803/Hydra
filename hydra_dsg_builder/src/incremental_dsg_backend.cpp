@@ -488,6 +488,8 @@ bool DsgBackend::addInternalLCDToDeformationGraph() {
 }
 
 void DsgBackend::updateDsgMesh(bool force_mesh_update) {
+  double num_interp_pts_ = 4;
+  double interp_horizon_ = 10.0;
   // avoid scope problems by using a smart pointer
   std::unique_ptr<ScopedTimer> timer;
 
