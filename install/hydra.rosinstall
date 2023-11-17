@@ -55,3 +55,7 @@
     local-name: voxblox
     uri: https://github.com/MIT-SPARK/voxblox.git
     version: feature/hydra
+- git:
+    local-name: semantic_recolor
+    uri: https://github.com/SPARK/semantic_recolor_nodelet.git
+    version: main
